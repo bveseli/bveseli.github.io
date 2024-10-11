@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blerta Veseli - Ph.D. Student</title>
+  <title>Your Name - Ph.D. Student</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -12,79 +12,144 @@
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
-      max-width: 800px;
+      display: flex;
+      max-width: 1200px;
       margin: auto;
     }
-    header {
-      display: flex;
-      align-items: center;
+    .sidebar {
+      background-color: #fff;
+      width: 300px;
       padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      height: 100vh;
     }
-    img {
+    .sidebar img {
       border-radius: 50%;
       width: 120px;
       height: 120px;
+      display: block;
+      margin: 0 auto 20px auto;
     }
-    .info {
-      margin-left: 20px;
-    }
-    h1 {
-      margin: 0;
-    }
-    .position {
-      color: #6a6a6a;
-    }
-    .section {
-      padding: 20px;
-    }
-    .highlight {
-      color: #0077cc;
-    }
-    .contact {
-      background-color: #f0f0f0;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    .education, .interests {
-      margin-top: 30px;
-    }
-    .list-item {
+    .sidebar h1 {
+      font-size: 22px;
+      text-align: center;
       margin-bottom: 10px;
     }
-    .email {
+    .sidebar p {
+      text-align: center;
+      color: #555;
+    }
+    .sidebar .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .sidebar .social a {
+      margin: 0 10px;
+      text-decoration: none;
       color: #0077cc;
+    }
+    .main-content {
+      flex-grow: 1;
+      padding: 40px;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .research, .publications {
+      margin-bottom: 40px;
+    }
+    .publication {
+      margin-bottom: 20px;
+    }
+    .publication img {
+      width: 200px;
+      border: 1px solid #ddd;
+      margin-right: 20px;
+      float: left;
+    }
+    .publication-details {
+      overflow: hidden;
+    }
+    .publication-details h3 {
+      margin: 0 0 10px 0;
+    }
+    .publication-details p {
+      margin: 0 0 5px 0;
+    }
+    .publication-links a {
+      margin-right: 10px;
+      color: #0077cc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .publication-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="photo/DSC_0217.JPG" alt="Your Name">
-    <div class="info">
-      <h1>Blerta Veseli</h1>
-      <p class="position">Ph.D. Student</p>
+  <div class="sidebar">
+    <img src="photo/DSC_0217.JPG" alt="Blerta Veseli">
+    <h1>Your Name</h1>
+    <p>Ph.D. Student</p>
+    <p>Your Institution</p>
+    <p>your-email [at] domain.com</p>
+    <div class="social">
+      <a href="#">G</a>
+      <a href="#">CV</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
     </div>
-  </header>
+  </div>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I am a Ph.D. student affiliated with </p>
-  </section>
+  <div class="main-content">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I am a Ph.D. student at <a href="#">Your University</a>, focusing on [your research area]. My work involves [brief summary of your research interests or thesis].</p>
+    </section>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p class="contact">Feel free to contact me at <a href="mailto:blerta.veseli@uni-saarland" class="email">blerta.veseli@uni-saarland.de</a></p>
-  </section>
+    <section class="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Vision/Animation: [Details about vision and animation research]</li>
+        <li>Language: [Details about language research]</li>
+      </ul>
+    </section>
 
-  <section class="section education">
-    <h2>Education</h2>
-  </section>
+    <section class="publications">
+      <h2>Publications</h2>
 
-  <section class="section interests">
-    <h2>Interests</h2>
-  </section>
+      <div class="publication">
+        <img src="publication-image.jpg" alt="Publication Image">
+        <div class="publication-details">
+          <h3><a href="#">ConvoFusion: Multi-Modal Conversational Diffusion for Co-Speech Gesture Synthesis</a></h3>
+          <p><strong>Your Name</strong>, Co-authors (2024). <i>Conference Name</i></p>
+          <div class="publication-links">
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+            <a href="#">Project Page</a>
+            <a href="#">Dataset</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication">
+        <img src="publication-image2.jpg" alt="Publication Image">
+        <div class="publication-details">
+          <h3><a href="#">MoFusion: A Framework for Denoising-Diffusion-based Motion Synthesis</a></h3>
+          <p><strong>Your Name</strong>, Co-authors (2023). <i>Conference Name</i></p>
+          <div class="publication-links">
+            <a href="#">PDF</a>
+            <a href="#">Project Page</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
 
 </body>
 </html>
-
