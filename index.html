@@ -12,144 +12,92 @@
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
-      display: flex;
-      max-width: 1200px;
+      max-width: 800px;
       margin: auto;
     }
-    .sidebar {
-      background-color: #fff;
-      width: 300px;
+    header {
+      display: flex;
+      align-items: center;
       padding: 20px;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-      height: 100vh;
     }
-    .sidebar img {
+    img {
       border-radius: 50%;
       width: 120px;
       height: 120px;
-      display: block;
-      margin: 0 auto 20px auto;
     }
-    .sidebar h1 {
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 10px;
+    .info {
+      margin-left: 20px;
     }
-    .sidebar p {
-      text-align: center;
-      color: #555;
+    h1 {
+      margin: 0;
     }
-    .sidebar .social {
-      display: flex;
-      justify-content: center;
+    .position {
+      color: #6a6a6a;
+    }
+    .section {
+      padding: 20px;
+    }
+    .highlight {
+      color: #0077cc;
+    }
+    .contact {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 10px;
       margin-top: 20px;
     }
-    .sidebar .social a {
-      margin: 0 10px;
-      text-decoration: none;
+    .education, .interests {
+      margin-top: 30px;
+    }
+    .list-item {
+      margin-bottom: 10px;
+    }
+    .email {
       color: #0077cc;
-    }
-    .main-content {
-      flex-grow: 1;
-      padding: 40px;
-    }
-    h2 {
-      color: #0077cc;
-    }
-    .research, .publications {
-      margin-bottom: 40px;
-    }
-    .publication {
-      margin-bottom: 20px;
-    }
-    .publication img {
-      width: 200px;
-      border: 1px solid #ddd;
-      margin-right: 20px;
-      float: left;
-    }
-    .publication-details {
-      overflow: hidden;
-    }
-    .publication-details h3 {
-      margin: 0 0 10px 0;
-    }
-    .publication-details p {
-      margin: 0 0 5px 0;
-    }
-    .publication-links a {
-      margin-right: 10px;
-      color: #0077cc;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .publication-links a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <img src="photo/DSC_0217.JPG" alt="Blerta Veseli">
-    <h1>Your Name</h1>
-    <p>Ph.D. Student</p>
-    <p>Your Institution</p>
-    <p>your-email [at] domain.com</p>
-    <div class="social">
-      <a href="#">G</a>
-      <a href="#">CV</a>
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
+  <header>
+    <img src="DSC_0365 Kopie2.jpg" alt="Blerta Veseli">
+    <div class="info">
+      <h1>Your Name</h1>
+      <p class="position">Ph.D. Student, <i>she/her</i></p>
+      <p><span class="highlight">Looking for internship opportunities!</span></p>
     </div>
-  </div>
+  </header>
 
-  <div class="main-content">
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I am a Ph.D. student at <a href="#">Your University</a>, focusing on [your research area]. My work involves [brief summary of your research interests or thesis].</p>
-    </section>
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I am a Ph.D. student affiliated with the <a href="#">Foundations of Language Processing Group</a> at <strong>Umeå University</strong>, focusing on making neural network architectures more interpretable through formal language theory.</p>
+    <ul>
+      <li>Assistant in Research at Yale University (Autumn 2024), working with Bob Frank and Dana Angluin.</li>
+      <li>Assistant in Research at MIT (Spring 2024), working with Jon Rawski.</li>
+      <li>Research Intern at Aristo @ AI2 (Aug-Dec 2023), supervised by Ashish Sabharwal.</li>
+    </ul>
+  </section>
 
-    <section class="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Vision/Animation: [Details about vision and animation research]</li>
-        <li>Language: [Details about language research]</li>
-      </ul>
-    </section>
+  <section class="section">
+    <h2>Contact</h2>
+    <p class="contact">Feel free to contact me at <a href="mailto:lenas@cs.umu.se" class="email">lenas[at]cs.umu.se</a></p>
+  </section>
 
-    <section class="publications">
-      <h2>Publications</h2>
+  <section class="section education">
+    <h2>Education</h2>
+    <div class="list-item"><strong>Ph.D. in Computer Science, 2022 -</strong> Foundations of Language Processing Group, Umeå University</div>
+    <div class="list-item"><strong>M.Sc. in Computer Science with Speech and Language Processing, 2021</strong> University of Sheffield</div>
+    <div class="list-item"><strong>B.Sc. in Computer Science, 2019</strong> Freie Universität Berlin</div>
+  </section>
 
-      <div class="publication">
-        <img src="publication-image.jpg" alt="Publication Image">
-        <div class="publication-details">
-          <h3><a href="#">ConvoFusion: Multi-Modal Conversational Diffusion for Co-Speech Gesture Synthesis</a></h3>
-          <p><strong>Your Name</strong>, Co-authors (2024). <i>Conference Name</i></p>
-          <div class="publication-links">
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
-            <a href="#">Project Page</a>
-            <a href="#">Dataset</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="publication">
-        <img src="publication-image2.jpg" alt="Publication Image">
-        <div class="publication-details">
-          <h3><a href="#">MoFusion: A Framework for Denoising-Diffusion-based Motion Synthesis</a></h3>
-          <p><strong>Your Name</strong>, Co-authors (2023). <i>Conference Name</i></p>
-          <div class="publication-links">
-            <a href="#">PDF</a>
-            <a href="#">Project Page</a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </div>
+  <section class="section interests">
+    <h2>Interests</h2>
+    <ul>
+      <li>Formal Language Theory</li>
+      <li>Neural Networks</li>
+      <li>Computational Linguistics</li>
+    </ul>
+  </section>
 
 </body>
 </html>
