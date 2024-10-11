@@ -12,92 +12,116 @@
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
-    header {
+    .container {
+      padding: 40px;
+    }
+    .header {
       display: flex;
       align-items: center;
-      padding: 20px;
+      margin-bottom: 40px;
     }
-    img {
+    .header img {
       border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 30px;
     }
-    .info {
+    .header-info {
+      max-width: 600px;
+    }
+    .header-info h1 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #333;
+    }
+    .header-info p {
+      font-style: italic;
+      color: #555;
+      margin-top: -10px;
+    }
+    .header-info .internship-link {
+      color: #0077cc;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    section {
+      margin-top: 40px;
+    }
+    h2 {
+      color: #333;
+      font-size: 22px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: disc;
       margin-left: 20px;
     }
-    h1 {
-      margin: 0;
-    }
-    .position {
-      color: #6a6a6a;
-    }
-    .section {
-      padding: 20px;
-    }
-    .highlight {
+    .contact a {
+      display: inline-block;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
       color: #0077cc;
-    }
-    .contact {
-      background-color: #f0f0f0;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    .education, .interests {
-      margin-top: 30px;
-    }
-    .list-item {
-      margin-bottom: 10px;
-    }
-    .email {
-      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="photo/DSC_0365 Kopie2.jpg" alt="Blerta Veseli">
-    <div class="info">
-      <h1>Your Name</h1>
-      <p class="position">Ph.D. Student, <i>she/her</i></p>
-      <p><span class="highlight">Looking for internship opportunities!</span></p>
+  <div class="container">
+
+    <div class="header">
+      <img src="photo/DSC_0217.JPG" alt="Your Name">
+      <div class="header-info">
+        <h1>Your Name</h1>
+        <p>Ph.D. Student, <em>she/her</em></p>
+        <a class="internship-link" href="#">Looking for internship opportunities!</a>
+      </div>
     </div>
-  </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I am a Ph.D. student affiliated with the <a href="#">Foundations of Language Processing Group</a> at <strong>Umeå University</strong>, focusing on making neural network architectures more interpretable through formal language theory.</p>
-    <ul>
-      <li>Assistant in Research at Yale University (Autumn 2024), working with Bob Frank and Dana Angluin.</li>
-      <li>Assistant in Research at MIT (Spring 2024), working with Jon Rawski.</li>
-      <li>Research Intern at Aristo @ AI2 (Aug-Dec 2023), supervised by Ashish Sabharwal.</li>
-    </ul>
-  </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I am a Ph.D. student affiliated with the <a href="#">Foundations of Language Processing Group</a> at Umeå University, focusing on making neural network architectures more interpretable through formal language theory.</p>
+      <ul>
+        <li>Assistant in Research at Yale University (Autumn 2024), working with Bob Frank and Dana Angluin.</li>
+        <li>Assistant in Research at MIT (Spring 2024), working with Jon Rawski.</li>
+        <li>Research Intern at Aristo @ AI2 (Aug-Dec 2023), supervised by Ashish Sabharwal.</li>
+      </ul>
+    </section>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p class="contact">Feel free to contact me at <a href="mailto:lenas@cs.umu.se" class="email">lenas[at]cs.umu.se</a></p>
-  </section>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Feel free to contact me at <a href="mailto:lenas[at]cs.umu.se">lenas[at]cs.umu.se</a>.</p>
+    </section>
 
-  <section class="section education">
-    <h2>Education</h2>
-    <div class="list-item"><strong>Ph.D. in Computer Science, 2022 -</strong> Foundations of Language Processing Group, Umeå University</div>
-    <div class="list-item"><strong>M.Sc. in Computer Science with Speech and Language Processing, 2021</strong> University of Sheffield</div>
-    <div class="list-item"><strong>B.Sc. in Computer Science, 2019</strong> Freie Universität Berlin</div>
-  </section>
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>Ph.D. in Computer Science, 2022</strong> - Foundations of Language Processing Group, Umeå University</p>
+      <p><strong>M.Sc. in Computer Science with Speech and Language Processing, 2021</strong> - University of Sheffield</p>
+      <p><strong>B.Sc. in Computer Science, 2019</strong> - Freie Universität Berlin</p>
+    </section>
 
-  <section class="section interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>Formal Language Theory</li>
-      <li>Neural Networks</li>
-      <li>Computational Linguistics</li>
-    </ul>
-  </section>
+    <section class="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Formal Language Theory</li>
+        <li>Neural Networks</li>
+        <li>Computational Linguistics</li>
+      </ul>
+    </section>
+
+  </div>
 
 </body>
 </html>
