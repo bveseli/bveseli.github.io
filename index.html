@@ -4,50 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Ph.D. Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" >
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f0f0f0;  /* Light grey background */
       color: #333;
-      max-width: 900px;
-      margin: auto;
     }
     .container {
+      background-color: #f0f0f0;
       padding: 40px;
+      max-width: 900px;
+      margin: 40px auto;  /* Center the container */
+
     }
     .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: -20px;
     }
-    .header img {
-      border-radius: 50%;
-      width: 300px;  /* Increased size */
-      height: 300px;  /* Increased size */
-      object-fit: cover;
-      margin-right: 30px;
-    }
-    .header-info {
-      max-width: 600px;
-    }
-    .header-info h1 {
+    .header h1 {
       margin-top: 0;
       font-size: 28px;
       color: #333;
     }
-    .header-info p {
+    .header p {
       font-style: italic;
       color: #555;
-      margin-top: -10px;
     }
-    .header-info .internship-link {
+    .header .internship-link {
       color: #0077cc;
       font-weight: bold;
       display: block;
       margin-top: 10px;
+    }
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .text-content {
+      flex: 1;
+      margin-right: 30px; /* Space between text and image */
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 20px;
+      flex-shrink: 0;
+      margin-top: 80px;
     }
     section {
       margin-top: 40px;
@@ -55,7 +63,7 @@
     h2 {
       color: #333;
       font-size: 22px;
-      border-bottom: 2px solid lightgray;  /* Changed line color to light gray */
+      border-bottom: 2px solid #a0a0a0;  /* Slightly darker grey line */
       padding-bottom: 5px;
     }
     p {
@@ -75,51 +83,160 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    .social-icons {
+        margin-top: 10px; /* Space between name and icons */
+    }
+
+    .social-icons a {
+        margin-right: 15px; /* Space between icons */
+        color: #333; /* Default color */
+        font-size: 20px; /* Size of icons */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .social-icons a:hover {
+        color: #007bff; /* Change color on hover */
+    }
+
+    .box {
+        background-color: #f0f0f0; /* White background for the box */
+        border-radius: 8px; /* Rounded corners */
+        padding: 15px; /* Inner spacing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+        margin: 10px 0; /* Space above and below the box */
+    }
+
+    .publication {
+        margin-bottom: 20px; /* Space between publications */
+    }
+
+    .publication h5 {
+        margin: 0; /* Remove default margin from h5 */
+    }
+
+    .publication .icons {
+        margin-top: 10px; /* Space between publication details and icons */
+    }
+
+    .publication .icons a {
+        margin-right: 15px; /* Space between icons */
+        color: #333; /* Default color */
+        font-size: 18px; /* Size of icons */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .publication .icons a:hover {
+        color: #007bff; /* Change color on hover */
+    }
+
+
   </style>
 </head>
 <body>
 
   <div class="container">
 
+    <!-- Header with Name and Role -->
     <div class="header">
-      <img src="photo/DSC_0217.JPG" alt="Your Name">
-      <div class="header-info">
-        <h1>Your Name</h1>
-        <p>Ph.D. Student, <em>she/her</em></p>
-        <a class="internship-link" href="#">Looking for internship opportunities!</a>
+      <h1>Blerta Veseli</h1>
+      <!--<p>Ph.D. Student</p>-->
+      <div class="social-icons">
+          <a href="https://github.com/bveseli" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:bveseli@mpi-sws.org" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+          </a>
       </div>
     </div>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I am a Ph.D. student affiliated with the <a href="#">Foundations of Language Processing Group</a> at Umeå University, focusing on making neural network architectures more interpretable through formal language theory.</p>
-      <ul>
-        <li>Assistant in Research at Yale University (Autumn 2024), working with Bob Frank and Dana Angluin.</li>
-        <li>Assistant in Research at MIT (Spring 2024), working with Jon Rawski.</li>
-        <li>Research Intern at Aristo @ AI2 (Aug-Dec 2023), supervised by Ashish Sabharwal.</li>
-      </ul>
-    </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Feel free to contact me at <a href="mailto:lenas[at]cs.umu.se">lenas[at]cs.umu.se</a>.</p>
-    </section>
+    <!-- Main Content with Text and Image Side by Side -->
+    <div class="main-content">
+      <!-- Text Content -->
+      <div class="text-content">
+        <section class="about">
+          <h3>About Me</h3>
+          <p>
+            I am a Ph.D. under the supervision of <a href="https://www.coli.uni-saarland.de/~koller/" target="_blank">Prof. Dr. Alexander Koller</a> (Saarland University) and <a href="https://mtoneva.com" target="_blank">Mariya Toneva</a> (MPI-SWS). I am affiliated with the Research Training Group on <a href="https://www.neuroexplicit.org" target="_blank">Neuroexplicit Models of Language, Vision, and Action</a>, where I work on long-context reasoning and working memory in Large Language Models (LLMs). Previously, I worked as a Research Assistant at the <a href="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems" target="_blank">Max Planck Institute for Informatics</a>, completing my master's thesis under the guidance of <a href="https://people.mpi-inf.mpg.de/~weikum/" target="_blank">Prof. Dr. Gerhard Weikum</a> and <a href="https://scads.ai/about-us/ai-professorships/kaai/" target="_blank">Prof. Dr. Simon Razniewski</a>. My thesis focused on Knowledge Base Completion using LLMs.
+          </p>
+        </section>
 
-    <section class="education">
-      <h2>Education</h2>
-      <p><strong>Ph.D. in Computer Science, 2022</strong> - Foundations of Language Processing Group, Umeå University</p>
-      <p><strong>M.Sc. in Computer Science with Speech and Language Processing, 2021</strong> - University of Sheffield</p>
-      <p><strong>B.Sc. in Computer Science, 2019</strong> - Freie Universität Berlin</p>
-    </section>
+        <section class="interests">
+          <h3>Research Interests</h3>
+          <ul>
+            <li>Memory</li>
+            <li>Neural Networks, Transformers</li>
+            <li>Mechanistic Interpretability</li>
+          </ul>
+        </section>
 
-    <section class="interests">
-      <h2>Interests</h2>
-      <ul>
-        <li>Formal Language Theory</li>
-        <li>Neural Networks</li>
-        <li>Computational Linguistics</li>
-      </ul>
-    </section>
+
+        <!--
+        <section class="publications">
+          <h3>Publications</h3>
+          <p><a href="https://aclanthology.org/2023.findings-emnlp.426.pdf" target="_blank">Evaluating Knowledge Base Completion Potential of GPT</a> <br> Blerta Veseli, Simon Razniewski, Jan-Christoph Kalo, Gehard Weikum; (EMNLP 2023)</p>
+          <p><a href="https://arxiv.org/pdf/2303.11082" target="_blank">Evaluating Language Models for Knowledge Base Completion</a> <br> Blerta Veseli, Sneha Singhania, Simon Razniewski, Gehard Weikum; (ESWC 2023)</p>
+        </section>
+        -->
+
+      <div class="publication-list">
+          <h3>Publications</h3>
+
+          <div class="publication">
+              <h5>Evaluating Knowledge Base Completion Potential of GPT</h5>
+              <p>Blerta Veseli, Simon Razniewski, Jan-Christoph Kalo, Gehard Weikum<br>
+              EMNLP 2023</p>
+              <div class="icons">
+                  <a href="https://aclanthology.org/2023.findings-emnlp.426.pdf" target="_blank" aria-label="PDF">
+                      <i class="fas fa-file-pdf"></i>
+                  </a>
+                  <a href="link_to_dataset_1" target="_blank" aria-label="Dataset">
+                      <i class="fas fa-database"></i>
+                  </a>
+                  <a href="link_to_code_1" target="_blank" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="publication">
+              <h5>Evaluating Language Models for Knowledge Base Completion</h5>
+              <p>Blerta Veseli, Sneha Singhania, Simon Razniewski, Gehard Weikum<br>
+              ESWC 2023</p>
+              <div class="icons">
+                  <a href="https://arxiv.org/pdf/2303.11082" target="_blank" aria-label="PDF">
+                      <i class="fas fa-file-pdf"></i>
+                  </a>
+                  <a href="link_to_dataset_2" target="_blank" aria-label="Dataset">
+                      <i class="fas fa-database"></i>
+                  </a>
+                  <a href="link_to_code_2" target="_blank" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </div>
+          </div>
+        <!-- Add more publications as needed -->
+      </div>
+
+
+        <section class="personal">
+          <h3>Personal</h3>
+
+
+        </section>
+
+
+
+      </div>
+
+      <!-- Profile Image -->
+      <img src="photo/pic.jpeg" alt="Your Name" class="profile-img">
+    </div>
 
   </div>
 
