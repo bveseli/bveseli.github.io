@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Ph.D. Student</title>
+  <title>Blerta Veseli - Ph.D. Student</title>
   <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" >
   <style>
@@ -17,7 +17,7 @@
     .container {
       background-color: #f0f0f0;
       padding: 40px;
-      max-width: 900px;
+      max-width: 1150px;
       margin: 40px auto;  /* Center the container */
 
     }
@@ -49,13 +49,13 @@
       margin-right: 30px; /* Space between text and image */
     }
     .profile-img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       object-fit: cover;
       margin-left: 20px;
       flex-shrink: 0;
-      margin-top: 80px;
+      margin-top: 70px;
     }
     section {
       margin-top: 40px;
@@ -109,6 +109,9 @@
 
     .publication {
         margin-bottom: 20px; /* Space between publications */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
     }
 
     .publication h5 {
@@ -130,7 +133,62 @@
         color: #007bff; /* Change color on hover */
     }
 
+    .publication-list{
 
+        margin-top: 40px;
+    }
+    .personal-section {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .personal-section h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .personal-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .personal-content img {
+        width: 200px; /* Circular image size */
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover; /* Ensures the image covers the circular area */
+    }
+
+    .personal-text {
+        width: 60%; /* Adjust width of text */
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .personal-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    /* Media queries for smaller screens */
+    @media (max-width: 900px) {
+        .personal-content {
+            flex-direction: column;
+        }
+
+        .personal-text {
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .personal-content img {
+            width: 150px;
+            height: 150px;
+        }
+    }
   </style>
 </head>
 <body>
@@ -159,8 +217,8 @@
     <div class="main-content">
       <!-- Text Content -->
       <div class="text-content">
-        <section class="about">
-          <h3>About Me</h3>
+        <section class="about" style="margin-top: 70px">
+          <h2>About Me</h2>
           <p>
             I am a Ph.D. under the supervision of <a href="https://www.coli.uni-saarland.de/~koller/" target="_blank">Prof. Dr. Alexander Koller</a> (Saarland University) and <a href="https://mtoneva.com" target="_blank">Mariya Toneva</a> (MPI-SWS). I am affiliated with the Research Training Group on <a href="https://www.neuroexplicit.org" target="_blank">Neuroexplicit Models of Language, Vision, and Action</a>, where I work on long-context reasoning and working memory in Large Language Models (LLMs). Previously, I worked as a Research Assistant at the <a href="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems" target="_blank">Max Planck Institute for Informatics</a>, completing my master's thesis under the guidance of <a href="https://people.mpi-inf.mpg.de/~weikum/" target="_blank">Prof. Dr. Gerhard Weikum</a> and <a href="https://scads.ai/about-us/ai-professorships/kaai/" target="_blank">Prof. Dr. Simon Razniewski</a>. My thesis focused on Knowledge Base Completion using LLMs.
           </p>
@@ -176,19 +234,11 @@
         </section>
 
 
-        <!--
-        <section class="publications">
-          <h3>Publications</h3>
-          <p><a href="https://aclanthology.org/2023.findings-emnlp.426.pdf" target="_blank">Evaluating Knowledge Base Completion Potential of GPT</a> <br> Blerta Veseli, Simon Razniewski, Jan-Christoph Kalo, Gehard Weikum; (EMNLP 2023)</p>
-          <p><a href="https://arxiv.org/pdf/2303.11082" target="_blank">Evaluating Language Models for Knowledge Base Completion</a> <br> Blerta Veseli, Sneha Singhania, Simon Razniewski, Gehard Weikum; (ESWC 2023)</p>
-        </section>
-        -->
-
       <div class="publication-list">
           <h3>Publications</h3>
 
           <div class="publication">
-              <h5>Evaluating Knowledge Base Completion Potential of GPT</h5>
+              <h4>Evaluating Knowledge Base Completion Potential of GPT</h4>
               <p>Blerta Veseli, Simon Razniewski, Jan-Christoph Kalo, Gehard Weikum<br>
               EMNLP 2023</p>
               <div class="icons">
@@ -205,7 +255,7 @@
           </div>
 
           <div class="publication">
-              <h5>Evaluating Language Models for Knowledge Base Completion</h5>
+              <h4>Evaluating Language Models for Knowledge Base Completion</h4>
               <p>Blerta Veseli, Sneha Singhania, Simon Razniewski, Gehard Weikum<br>
               ESWC 2023</p>
               <div class="icons">
@@ -224,18 +274,62 @@
       </div>
 
 
-        <section class="personal">
-          <h3>Personal</h3>
 
 
-        </section>
+
+      <h2 style="margin-top: 80px">Personal</h2>
+        <div class="personal-section">
+            <!-- Row 2: Hiking experience -->
+            <div class="personal-content">
+                <img src="photo/20231207_185851.jpg" alt="Hiking" >
+                <img src="photo/IMG-20240122-WA0000.jpg" alt="Hiking" style="margin-right: 20px; margin-left: -20px">
+                <div class="personal-text">
+                    <p>I am passionate about backpacking and traveling, especially when it allows me to discover new and exciting cuisines.</p>
+                    <p>Some of my all-time favorite dishes include Thailand's sweet and spicy massaman curry, and Morocco's lamb tagine with prunes (tajine d'agneau aux pruneaux), among many others. I often visit the same restaurant and order the same dish multiple times  - which turned out to be a great way to make friends even when traveling.</p>
+                </div>
+            </div>
+
+            <!-- Row 3: Running experience -->
+            <div class="personal-content">
+                <div class="personal-text">
+                    <p>I have a deep love for freshly baked goods, from German bread to flaky msemmen, roti, naan, and French pastries. And when it comes to dessert, there’s always room! In fact, I once spent two days of my vacation hunting down a particular ice cream truck.</p>
+                </div>
+                <img src="photo/20240302_222737.jpg" alt="Hiking" style="margin-right: -20px; margin-left: 10px">
+                <img src="photo/20240303_120941.jpg" alt="Hiking">
+            </div>
+
+            <!-- Row 3: Running experience -->
+            <div class="personal-content" >
+                <img src="photo/IMG-20230107-WA0000.jpg" alt="Running">
+                <div class="personal-text">
+                    <p>When I'm on vacation, I sometimes prefer a more adventurous experience.  I really enjoy tackling new challenges and being confronted with problems that are different from those in my daily Ph.D. life.</p>
+                </div>
+            </div>
+
+
+            <!-- Row 4: Running experience -->
+            <div class="personal-content">
+                <div class="personal-text">
+                    <p>In my free time, I am passionate about exploring fashion and seeking out unique pieces. To me, fashion can be wearable art. Handmade pieces can be incredibly creative and showcase cultural heritage. That’s why I love bringing something special back from my travels—it feels like collecting a piece of the culture itself. </p>
+                </div>
+                <img src="photo/IMG-20230413-WA0025.jpg" alt="Running">
+            </div>
+
+             <!-- Row 4: Running experience -->
+            <div class="personal-content">
+                <img src="photo/Sekiro_09.jpg" alt="Running">
+                <div class="personal-text">
+                    <p>Beyond my interest in fashion, I also enjoy playing video games like Alan Wake, Half-Life: Alyx, Sekiro, The Evil Within, and Red Dead Redemption. I’m also an anime fan, with favorites like Attack on Titan, Jujutsu Kaisen, Noragami, Cowboy Bebop, and Banana Fish. I have a particular love for thriller, mystery, and horror films - Mike Flanagan is one of my favorite directors in the mystery/horror genre.</p>
+                </div>
+
+            </div>
+        </div>
 
 
 
       </div>
-
       <!-- Profile Image -->
-      <img src="photo/pic.jpeg" alt="Your Name" class="profile-img">
+      <img src="photo/pic.jpeg" alt="Blerta Veseli" class="profile-img">
     </div>
 
   </div>
